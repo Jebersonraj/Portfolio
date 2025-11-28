@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+.Header {
+    display: flex;
+    color: white;
+    background-color: black;
+}
+.Header-left{
+    flex: 0.2;
+}
+.Header-left > h1{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    font-family: "Alata", sans-serif;
+}
+.Header-left > h1 > span {
+    color: darkorange;
+}
+.Header-right {
+    display: flex;
+    flex: 0.8;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.Header-right > h4 {
+    font-family: "Crimson Text",serif;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.Header-right > h4:hover {
+    color: white;
+    background-color: darkorange;
+    border-radius: 2px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+    transform:scale(1.09)
+}
+
+.header-btn {
+    background: darkorange;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em 3.3em 0.35em 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em darkorange;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    cursor: pointer;
+}
+.header-btn .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em darkorange;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+.header-btn:hover .icon {
+    width: calc(100% - 0.6em);
+}
+.header-btn .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: darkorange;
+}
+
+.header-btn:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.header-btn:active .icon {
+    transform: scale(0.95);
+}
