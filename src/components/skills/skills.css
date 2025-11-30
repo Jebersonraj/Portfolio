@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+.skills-image img {
+    width: 650px;
+    object-fit: contain;
+}
+
+.skill-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 200px 0;
+}
+
+.skill-text{
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+    max-width: 500px;
+    flex:0.8;
+}
+
+.skills-image{
+    display: flex;
+    margin: 100px;
+}
+
+.skills-image img{
+    width: 600px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.skill-text > h2{
+    margin-top: 80px;
+    font-size: 50px;
+    color: darkorange;
+    font-family: 'Crimson Text', serif;
+}
+
+.skill-text > h4{
+    color: white;
+    font-family: 'alata', sans-serif;
+}
+
+.skill-inner > .MuiLinearProgress-colorPrimary{
+    background-color: gray;
+}

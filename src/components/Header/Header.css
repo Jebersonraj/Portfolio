@@ -15,6 +15,7 @@
     padding: 20px 0;
     letter-spacing: 1px;
     font-family: "Alata", sans-serif;
+    cursor: pointer;
 }
 .Header-left > h1 > span {
     color: darkorange;
@@ -26,13 +27,13 @@
     align-items: center;
 
 }
-.Header-right > h4 {
+.Header-right  h4 {
     font-family: "Crimson Text",serif;
     font-size: 18px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.Header-right > h4:hover {
+.Header-right  h4:hover {
     color: white;
     background-color: darkorange;
     border-radius: 2px;

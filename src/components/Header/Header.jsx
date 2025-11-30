@@ -9,16 +9,21 @@ function Header() {
                 <h1><span>Jeb's</span> Portfolio</h1>
             </div>
             <div className="Header-right">
-                <Link to="about" smooth={true} duration={500}/>
+                <Link to="about" smooth={true} duration={500}>
                     <h4>About</h4>
-                <Link to="skills" smooth={true} duration={500}/>
+                </Link>
+                <Link to="skills" smooth={true} duration={500}>
                     <h4>Skills</h4>
-                <Link to="projects" smooth={true} duration={500}/>
+                </Link>
+                <Link to="projects" smooth={true} duration={500}>
                     <h4>Project</h4>
-                <Link to="education" smooth={true} duration={500}/>
+                </Link>
+                <Link to="education" smooth={true} duration={500}>
                     <h4>Education</h4>
-                <Link to="achievements" smooth={true} duration={500}/>
+                </Link>
+                <Link to="achievements" smooth={true} duration={500}>
                     <h4>Achievement</h4>
+                </Link>
                 <h5 className="header-btn">
                     Join with me
                     <span className="icon">
