@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -180px;
+    margin-bottom: 150px;
+}
+
+.project-container > h1 {
+    font-family: "Science Gothic", sans-serif;
+    color: darkorange;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 20px;
+    box-shadow:
+            0 0 12px rgba(255, 200, 80, 0.8),
+            0 0 25px rgba(255, 180, 50, 0.6),
+            0 0 40px rgba(255, 150, 0, 0.5),
+            inset 0 0 10px rgba(0, 0, 0, 0.2);
+
+    width: fit-content;
+}
+
+.project-container-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    max-width: 1200px;
+}
+
