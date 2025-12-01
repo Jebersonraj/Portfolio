@@ -30,7 +30,7 @@ function Skills() {
                 <img src="/src/assets/skills-img.png" alt="skills-img" />
             </div>
             <div className="skill-text">
-                <h2>Skills</h2>
+                <h1>Skills</h1>
                 <div className="skill-outer">
                     <h4>React</h4>
                     <SkillBar value={90} color="success" />

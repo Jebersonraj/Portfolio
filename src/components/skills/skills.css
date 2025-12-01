@@ -32,11 +32,24 @@
     border-radius: 5px;
 }
 
-.skill-text > h2{
-    margin-top: 80px;
-    font-size: 50px;
+.skill-text > h1{
     color: darkorange;
-    font-family: 'Crimson Text', serif;
+    background-color: black;
+    margin-top: 80px;;
+    font-family: "Science Gothic", sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 25px;
+    box-shadow:
+            0 0 12px rgba(255, 200, 80, 0.8),
+            0 0 25px rgba(255, 180, 50, 0.6),
+            0 0 40px rgba(255, 150, 0, 0.5),
+            inset 0 0 10px rgba(0, 0, 0, 0.2);
+
+    width: fit-content;
 }
 
 .skill-text > h4{
