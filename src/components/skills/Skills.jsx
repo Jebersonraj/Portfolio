@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Element } from 'react-scroll';
-import "./skills.css";
+import "./Skills.css";
 import { LinearProgress } from '@mui/material';
 
 function SkillBar({ value, color }) {

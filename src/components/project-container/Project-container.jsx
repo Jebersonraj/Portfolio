@@ -1,7 +1,7 @@
 import React from 'react';
 import {Element} from "react-scroll";
 import Project from "../project/Project.jsx";
-import "./project-container.css"
+import "./Project-container.css"
 
 function ProjectContainer() {
 
