@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Science+Gothic:wght@100..900&display=swap');
+
+.Contact {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Science Gothic", sans-serif;
+}
+
+.contact-title{
+    color: darkorange;
+    background-color: black;
+    border: 15px solid black;
+    border-radius: 15px;
+    box-shadow:  0 0 12px rgba(255, 200, 80, 0.8),
+    0 0 25px rgba(255, 180, 50, 0.6),
+    0 0 40px rgba(255, 150, 0, 0.5),
+    inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container {
+    background-color: black;
+    border: 2px solid darkorange;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:  0 0 12px rgba(255, 200, 80, 0.8),
+    0 0 25px rgba(255, 180, 50, 0.6),
+    0 0 40px rgba(255, 150, 0, 0.5),
+    inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-orange);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5), var(--glow);
+}
+
+.contact-container > p {
+    padding-bottom: 30px;
+    font-family: "Science Gothic", sans-serif;
+}
+
+.contact-container > p > span {
+    color: darkorange;
+    cursor: pointer;
+}
+
+.contact-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    cursor: pointer;
+}
