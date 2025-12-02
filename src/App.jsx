@@ -6,6 +6,8 @@ import ProjectContainer from "./components/project-container/project-container.j
 import "./App.css"
 import Education from "./components/Education/Education.jsx";
 import Achievements from "./components/Achivements/achivements.jsx";
+import Contact from "./components/Contact/Contact.jsx";
+import Joinwithme from "./components/Joinwithme/Joinwithme.jsx";
 
 function App() {
     return (
@@ -16,6 +18,8 @@ function App() {
             <ProjectContainer/>
             <Education/>
             <Achievements/>
+            <Contact/>
+            <Joinwithme/>
         </div>
     );
 }

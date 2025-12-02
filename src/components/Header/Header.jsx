@@ -24,16 +24,20 @@ function Header() {
                 <Link to="achievements" smooth={true} duration={500}>
                     <h4>Achievement</h4>
                 </Link>
-                <h5 className="header-btn">
-                    Join with me
-                    <span className="icon">
+                <Link to="contact" smooth={true} duration={500}>
+                    <h4>Contact</h4>
+                </Link>
+                <Link to="joinwithme" smooth={true} duration={500}>
+                    <h5 className="header-btn">
+                        Join with me
+                        <span className="icon">
                         <svg viewBox="0 0 512 512">
                             <path d="M320 128L448 256 320 384"/>
                             <path d="M448 256H64"/>
                         </svg>
                     </span>
-                </h5>
-
+                    </h5>
+                </Link>
             </div>
         </div>
     );
