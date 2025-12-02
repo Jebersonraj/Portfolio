@@ -5,7 +5,7 @@ import Skills from "./components/skills/skills.jsx";
 import ProjectContainer from "./components/project-container/project-container.jsx";
 import "./App.css"
 import Education from "./components/Education/Education.jsx";
-import Achievements from "./components/Achivements/achivements.jsx";
+import Achievements from "./components/Achivements/Achivements.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Joinwithme from "./components/Joinwithme/Joinwithme.jsx";
 
