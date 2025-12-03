@@ -3,47 +3,52 @@
 
 .Header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
     background-color: black;
+    padding: 15px 25px;
 }
-.Header-left{
+
+.Header-left {
     flex: 0.2;
 }
-.Header-left > h1{
+.Header-left > h1 {
     text-align: center;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     letter-spacing: 1px;
     font-family: "Alata", sans-serif;
     cursor: pointer;
+    font-size: 28px;
 }
 .Header-left > h1 > span {
     color: darkorange;
 }
+
 .Header-right {
     display: flex;
     flex: 0.8;
     justify-content: space-evenly;
     align-items: center;
-
+    gap: 25px;
 }
-.Header-right  h4 {
-    font-family: "Crimson Text",serif;
+.Header-right h4 {
+    font-family: "Crimson Text", serif;
     font-size: 18px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.Header-right  h4:hover {
+.Header-right h4:hover {
     color: white;
     background-color: darkorange;
     border-radius: 2px;
     padding: 5px 20px;
-    cursor: pointer;
     transition: 0.3s;
-    font-size: 18px;
-    transform:scale(1.09)
+    transform: scale(1.09);
 }
 
+/* BUTTON */
 .header-btn {
     background: darkorange;
     color: white;
@@ -84,11 +89,73 @@
     transition: transform 0.3s;
     color: darkorange;
 }
-
 .header-btn:hover .icon svg {
     transform: translateX(0.1em);
 }
-
 .header-btn:active .icon {
     transform: scale(0.95);
+}
+
+@media (max-width: 900px) {
+    .Header-right {
+        gap: 15px;
+    }
+    .Header-left > h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .Header-left {
+        flex: unset;
+    }
+
+    .Header-left > h1 {
+        font-size: 22px;
+    }
+
+    .Header-right {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .Header-right h4 {
+        font-size: 16px;
+    }
+
+    .header-btn {
+        font-size: 16px;
+        padding: 0.35em 2.4em 0.35em 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .Header {
+        padding: 10px 15px;
+    }
+
+    .Header-left > h1 {
+        font-size: 20px;
+    }
+
+    .Header-right {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .Header-right h4 {
+        font-size: 15px;
+    }
+
+    .header-btn {
+        width: 100%;
+        justify-content: center;
+        padding-right: 40px;
+    }
 }

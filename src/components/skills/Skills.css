@@ -26,8 +26,9 @@
     margin: 100px;
 }
 
-.skills-image img{
+.skills-image img {
     width: 600px;
+    max-width: 100%;
     object-fit: contain;
     border-radius: 5px;
 }
@@ -59,4 +60,30 @@
 
 .skill-inner > .MuiLinearProgress-colorPrimary{
     background-color: gray;
+}
+
+@media (max-width: 768px) {
+
+    .skills-image img {
+        width: 85%;
+    }
+
+    .skill-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 100px 0;
+        gap: 30px;
+    }
+
+    .skill-text {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .skill-text > h1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
 }
