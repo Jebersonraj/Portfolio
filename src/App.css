@@ -2,3 +2,24 @@ a{
     text-decoration: none;
     color: white;
 }
+
+body {
+    background-color: #050505;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.Home {
+    background-color: #050505;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-layer-top,
+.section-layer-bottom {
+    position: relative;
+    width: 100%;
+    background-color: #050505;
+    padding: 120px 0;
+    box-sizing: border-box;
+}
