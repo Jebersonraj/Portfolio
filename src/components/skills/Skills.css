@@ -1,89 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-
-.skills-image img {
-    width: 650px;
-    object-fit: contain;
+:root {
+    --bg-dark: #0a0a0a;
+    --card-bg: #141414;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --accent-orange: #ff6b00;
+    --accent-glow: rgba(255, 107, 0, 0.4);
 }
 
-.skill-container {
+.skills-section {
+    background-color: var(--bg-dark);
+    padding: 4rem 2rem;
+    min-height: 60vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
     text-align: center;
     justify-content: center;
-    margin: 200px 0;
 }
 
-.skill-text{
-    color: white;
-    text-align: left;
-    margin-bottom: 20px;
-    max-width: 500px;
-    flex:0.8;
+.skills-title .highlight {
+    color: var(--accent-orange);
+    text-shadow: 0 0 15px var(--accent-glow);
 }
 
-.skills-image{
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 2rem 1rem;
     display: flex;
-    margin: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
-.skills-image img {
-    width: 600px;
-    max-width: 100%;
-    object-fit: contain;
-    border-radius: 5px;
+.skill-card.animate-in {
+    animation: fadeInUp 0.6s ease forwards;
 }
 
-.skill-text > h1{
-    color: darkorange;
-    background-color: black;
-    margin-top: 80px;;
-    font-family: "Science Gothic", sans-serif;
-    text-align: center;
-    margin-bottom: 60px;
-    font-size: clamp(28px, 4vw, 42px);
-    font-weight: 700;
-    padding: 15px 30px;
-    border-radius: 25px;
-    box-shadow:
-            0 0 12px rgba(255, 200, 80, 0.8),
-            0 0 25px rgba(255, 180, 50, 0.6),
-            0 0 40px rgba(255, 150, 0, 0.5),
-            inset 0 0 10px rgba(0, 0, 0, 0.2);
-
-    width: fit-content;
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-orange);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 15px var(--accent-glow);
 }
 
-.skill-text > h4{
-    color: white;
-    font-family: 'alata', sans-serif;
+.progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
 }
 
-.skill-inner > .MuiLinearProgress-colorPrimary{
-    background-color: gray;
+svg {
+    transform: rotate(-90deg);
+    overflow: visible;
+}
+
+.bg-circle {
+    fill: none;
+    stroke: #2a2a2a;
+    stroke-width: 8;
+}
+
+.fg-circle {
+    fill: none;
+    stroke: var(--accent-orange);
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1.5s ease-out;
+    filter: drop-shadow(0 0 4px var(--accent-orange));
+}
+
+.skill-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.skill-name {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.skill-card:hover .skill-name {
+    color: var(--text-primary);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {
-
-    .skills-image img {
-        width: 85%;
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
-    .skill-container {
-        flex-direction: column-reverse;
-        text-align: center;
-        margin: 100px 0;
-        gap: 30px;
+    .skills-title {
+        font-size: 2rem;
     }
+}
 
-    .skill-text {
-        text-align: center;
-        max-width: 90%;
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
-
-    .skill-text > h1 {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-    }
-
 }
