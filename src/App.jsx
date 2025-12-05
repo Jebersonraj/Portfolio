@@ -26,9 +26,11 @@ function App() {
             <div className="section-layer-bottom">
                 <Achievements/>
             </div>
+
             <div className="section-layer-top">
                 <Contact/>
             </div>
+
             <div className="section-layer-bottom">
                 <Joinwithme/>
             </div>
