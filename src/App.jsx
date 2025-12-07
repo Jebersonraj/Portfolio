@@ -7,6 +7,7 @@ import Education from "./components/Education/Education.jsx";
 import Achievements from "./components/Achivements/Achivements.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Joinwithme from "./components/Joinwithme/Joinwithme.jsx";
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css"
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <div className="section-layer-bottom">
                 <Joinwithme/>
             </div>
+            <Analytics/>
         </div>
     );
 }
