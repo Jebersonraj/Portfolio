@@ -19,10 +19,10 @@ function ProjectContainer() {
             img:"/maskandmaster.png",
         },
         {
-            name:"Customer Churn prediction",
-            des:"Predicts the likelihood of a customer leaving and explains the factors influencing that prediction using  SHAP values.",
-            link:"https://github.com/Jebersonraj/Customer-Churn-Prediction",
-            img:"/customerchurn.png",
+            name:"sendawish",
+            des:"Open source platform to send wishes on special occasions.",
+            link:"https://github.com/Jebersonraj/sendawish",
+            img:"/sendawish.png",
         },
         {
             name:"Cawnpore Engineering and Construction",
