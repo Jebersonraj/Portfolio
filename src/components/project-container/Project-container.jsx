@@ -20,7 +20,7 @@ function ProjectContainer() {
         },
         {
             name:"sendawish",
-            des:"Open source platform to send wishes on special occasions.",
+            des:"Fun and entertaining open source platform to send wishes on special occasions.",
             link:"https://github.com/Jebersonraj/sendawish",
             img:"/sendawish.png",
         },
